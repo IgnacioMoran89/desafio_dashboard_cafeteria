@@ -1,0 +1,56 @@
+<h1> Cafetería El Genio Mágico</h1>
+
+<div>
+    <h2>Ventas mensuales de los últimos 12 meses</h2>
+    <%= column_chart @sales_by_month %>
+</div>
+
+<div>
+    <h2>Cantidad de ventas mensual de los últimos 12 meses</h2>
+    <%= column_chart @sales_by_count %>
+</div>
+
+<div>
+    <h2>Promedio de venta mensual de los últimos 12 meses</h2>
+    <%= column_chart @sales_by_average %>
+</div>
+
+<div>
+    <h2>Cantidad de ventas según el origen últimos 12 meses</h2>
+    <%= pie_chart @sales_origin_12 %>
+</div>
+
+<div>
+    <h2>Cantidad de ventas según el origen últimos 6 meses</h2>
+    <%= pie_chart @sales_origin_6 %>
+</div>
+
+<div>
+    <h2>Cantidad de ventas según el origen últimos 3 meses</h2>
+    <%= pie_chart @sales_origin_3 %>
+</div>
+
+<div>
+    <h2>Cantidad de ventas según el origen último mes</h2>
+    <%= pie_chart @sales_origin_1 %>
+</div>
+
+<div>
+    <h2>Cantidad de ventas según blend últimos 12 meses</h2>
+    <%= pie_chart @sales_blend_name_12 %>
+</div>
+
+<div>
+    <h2>Cantidad de ventas según blend últimos 6 meses</h2>
+    <%= pie_chart @sales_blend_name_6 %>
+</div>
+
+<div>
+    <h2>Cantidad de ventas según blend últimos 3 meses</h2>
+    <%= pie_chart @sales_blend_name_3 %>
+</div>
+
+<div>
+    <h2>Cantidad de ventas según blend último mes</h2>
+    <%= pie_chart @sales_blend_name_1 %>
+</div>
